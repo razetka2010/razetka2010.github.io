@@ -1,0 +1,223 @@
+<!-- profession.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системный администратор | Моя профессия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Навигационная панель -->
+<header class="fullscreen-nav">
+    <div class="nav-content">
+        <div class="nav-brand">
+            <h1 class="nav-name">Системный администратор</h1>
+            <p class="nav-location">сетевое и системное администрирование</p>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О профессии</a></li>
+                <li><a href="#responsibilities" class="nav-link">Обязанности</a></li>
+                <li><a href="#education" class="nav-link">Образование</a></li>
+                <li><a href="#career" class="nav-link">Карьера</a>
+            </ul>
+        </nav>
+
+        <div class="nav-social">
+            <a href="index.html" class="social-link">← Назад</a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mobile-menu">
+    <ul class="mobile-links">
+        <li><a href="index.html" class="mobile-link">Главная</a></li>
+        <li><a href="#about" class="mobile-link">О профессии</a></li>
+        <li><a href="#responsibilities" class="mobile-link">Обязанности</a></li>
+        <li><a href="#education" class="mobile-link">Образование</a></li>
+        <li><a href="#career" class="mobile-link">Карьера</a></li>
+    </ul>
+</div>
+
+<!-- Основной контент -->
+<main class="main-content">
+    <div class="container">
+        <!-- 1-й слайд: выбор профессии -->
+        <section class="card hero-card" id="about">
+            <h2><span class="card-icon">💻</span> Мой выбор профессии</h2>
+            <div class="bio-block" style="text-align: center;">
+                <p style="font-size: 1.3rem; font-weight: 600;">Сетевое и системное администрирование</p>
+                <p style="margin-top: 0.5rem;">Профиль, который объединяет технологии, безопасность и поддержку пользователей</p>
+            </div>
+        </section>
+
+        <!-- 2-й слайд: кто такой системный администратор -->
+        <section class="card" id="hero">
+            <h2><span class="card-icon">🦸‍♂️</span> Кто такой системный администратор?</h2>
+            <div class="bio-block">
+                <p><strong>Системный администратор — это «супергерой» любой компании.</strong> Обеспечивает бесперебойную работу компьютеров, серверов и сетей.</p>
+            </div>
+            <div class="info-block">
+                <h3>Зачем они нужны?</h3>
+                <ul class="profile-list">
+                    <li>Без нас интернет не работает</li>
+                    <li>Принтеры не печатают</li>
+                    <li>Сайты не открываются</li>
+                </ul>
+                <p style="margin-top: 1rem; color: var(--accent-light);">Мы — невидимый фундамент цифрового мира!</p>
+            </div>
+        </section>
+
+        <!-- 3-й слайд: обязанности -->
+        <section class="card" id="responsibilities">
+            <h2><span class="card-icon">⚙️</span> Ключевые обязанности</h2>
+            <div class="responsibilities-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">🖥️</div>
+                    <h3 style="margin: 0.5rem 0;">Настраивать и обновлять ПО</h3>
+                    <p style="color: var(--text-secondary);">Устанавливать и улучшать производительность операционных систем и приложений</p>
+                </div>
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">🔧</div>
+                    <h3 style="margin: 0.5rem 0;">Управлять сервисами</h3>
+                    <p style="color: var(--text-secondary);">Следить за их работой, обновлять и устранять сбои</p>
+                </div>
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">🌐</div>
+                    <h3 style="margin: 0.5rem 0;">Настраивать сети</h3>
+                    <p style="color: var(--text-secondary);">Подключать устройства, обеспечивать стабильный интернет и VPN</p>
+                </div>
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">🔒</div>
+                    <h3 style="margin: 0.5rem 0;">Обеспечивать безопасность</h3>
+                    <p style="color: var(--text-secondary);">Защищать данные от вирусов, хакеров и утечек</p>
+                </div>
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">💾</div>
+                    <h3 style="margin: 0.5rem 0;">Резервировать данные</h3>
+                    <p style="color: var(--text-secondary);">Создавать бэкапы, чтобы восстановить систему после сбоя</p>
+                </div>
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">👥</div>
+                    <h3 style="margin: 0.5rem 0;">Поддерживать пользователей</h3>
+                    <p style="color: var(--text-secondary);">Помогать сотрудникам с доступом к программам и решать их технические проблемы</p>
+                </div>
+                <div class="resp-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 2rem;">📊</div>
+                    <h3 style="margin: 0.5rem 0;">Мониторить системы</h3>
+                    <p style="color: var(--text-secondary);">Следить за нагрузкой серверов и предотвращать перебои</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4-й слайд: образование -->
+        <section class="card" id="education">
+            <h2><span class="card-icon">🎓</span> Где учиться?</h2>
+            <div class="education-item" style="display: block; text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🏛️</div>
+                <div class="education-desc">
+                    <strong style="font-size: 1.2rem;">ГБПОУ ЯНАО «Новоуренгойский многопрофильный колледж»</strong>
+                    <p style="margin-top: 1rem;">Образование по направлению «Сетевое и системное администрирование»</p>
+                </div>
+                <div class="bio-block" style="margin-top: 1.5rem;">
+                    <p><strong>Отбор абитуриентов:</strong> по среднему баллу аттестата</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-й слайд: направления работы -->
+        <section class="card" id="career">
+            <h2><span class="card-icon">🚪</span> Куда пойти работать?</h2>
+            <p style="margin-bottom: 1.5rem;">Профессия системного администратора универсальна и открывает двери в любой сфере деятельности.</p>
+            
+            <div class="directions-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+                <div class="direction-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 1.8rem;">🏢</div>
+                    <h3>IT-отделы компаний</h3>
+                    <p style="color: var(--text-secondary);">Крупный бизнес (банки, заводы) не может работать без IT-инфраструктуры</p>
+                </div>
+                <div class="direction-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 1.8rem;">📡</div>
+                    <h3>Провайдеры и телеком-компании</h3>
+                    <p style="color: var(--text-secondary);">Работа в «Ростелеком», МТС или местных провайдерах</p>
+                </div>
+                <div class="direction-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 1.8rem;">☁️</div>
+                    <h3>IT-аутсорсинг</h3>
+                    <p style="color: var(--text-secondary);">Удалённое обслуживание десятков небольших компаний</p>
+                </div>
+                <div class="direction-item" style="background: #0f2738; border-radius: 1rem; padding: 1rem;">
+                    <div style="font-size: 1.8rem;">🏛️</div>
+                    <h3>Государственный сектор</h3>
+                    <p style="color: var(--text-secondary);">Образование, медицина, администрации городов</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6-й слайд: востребованность и зарплата -->
+        <section class="card">
+            <h2><span class="card-icon">📈</span> Востребованность и зарплата</h2>
+            
+            <div class="bio-block">
+                <p>Цифровизация охватывает все сферы: медицину, образование, производство, финансы. Каждая компания, которая хочет быть конкурентоспособной, нуждается в специалисте по сетям и системам.</p>
+                <p style="margin-top: 1rem;"><strong>Рынок труда испытывает дефицит квалифицированных кадров, поэтому работу найду я, а не работа меня.</strong></p>
+            </div>
+
+            <div class="info-block">
+                <h3>Факторы формирования зарплаты</h3>
+                <ul class="profile-list">
+                    <li>Квалификация специалиста</li>
+                    <li>Опыт работы</li>
+                    <li>Профессиональный уровень</li>
+                </ul>
+                <p style="margin-top: 1rem; color: var(--accent-light);">💡 В крупных городах и в компаниях из сферы нефтегаза, банков или IT-гигантов цифры могут быть значительно выше</p>
+            </div>
+        </section>
+
+        <!-- 7-й слайд: заключение -->
+        <section class="card">
+            <h2><span class="card-icon">✨</span> Мой путь в профессию</h2>
+            <div class="bio-block" style="border-left-color: #c6512b;">
+                <p>С работой системного администратора я ознакомлен и получил опыт, находясь в школе и дома.</p>
+                <p style="margin-top: 1rem;"><strong>У меня есть интерес к написанию программ, которые решают и облегчают работу пользователям.</strong></p>
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <div style="font-size: 3rem;">🚀</div>
+                <p style="margin-top: 0.5rem;">Готов развиваться и становиться профессионалом своего дела!</p>
+            </div>
+        </section>
+
+        <!-- Кнопка возврата -->
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="button button-twitch" style="background: #1a4d6b;">
+                <span class="button-icon">←</span>
+                Вернуться на главную
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Сетевое и системное администрирование | Новый Уренгой</p>
+        <p class="footer-motto">Стабильность • Безопасность • Развитие</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
