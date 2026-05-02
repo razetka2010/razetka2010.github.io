@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SoftHub | Полезные программы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SoftHub.css">
+</head>
+<body>
+
+<div class="snow-container" id="snowContainer"></div>
+
+<nav class="fullscreen-nav">
+    <div class="nav-content">
+        <div class="nav-brand">
+            <div class="nav-name">Артём</div>
+            <div class="nav-location">разработчик из Нового Уренгоя
+        </div>
+        </div>
+        <div class="nav-social">
+            <a href="index.html" class="social-link">Главная </a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-links">
+        <li><a href="#" class="mobile-link active">Главная</a></li>
+        <li><a href="#" class="mobile-link">Программы</a></li>
+        <li><a href="#" class="mobile-link">Категории</a></li>
+        <li><a href="#" class="mobile-link">О проекте</a></li>
+        <li><a href="#" class="mobile-link">GitHub</a></li>
+        <li><a href="#" class="mobile-link">Telegram</a></li>
+    </ul>
+</div>
+
+<main class="main-content">
+    <div class="container">
+        <!-- Поиск и фильтрация -->
+        <div class="search-section">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Поиск программ..." class="search-input">
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-cat="all">Все</button>
+                <button class="filter-btn" data-cat="internet">🌐 Интернет</button>
+                <button class="filter-btn" data-cat="media">🎬 Медиа</button>
+                <button class="filter-btn" data-cat="system">🛠️ Системные</button>
+                <button class="filter-btn" data-cat="dev">💻 Разработка</button>
+                <button class="filter-btn" data-cat="security">🔒 Безопасность</button>
+                <button class="filter-btn" data-cat="graphics">🎨 Графика</button>
+                <button class="filter-btn" data-cat="utils">📦 Утилиты</button>
+            </div>
+        </div>
+
+        <!-- Счетчик результатов -->
+        <div class="results-count" id="resultsCount">Найдено программ: 0</div>
+
+        <!-- Сетка программ -->
+        <div class="programs-grid" id="programsGrid"></div>
+
+        <!-- Рекомендуемый блок -->
+        <div class="stream-section">
+            <div class="stream-info">
+                <div class="stream-icon">⚡</div>
+                <div>
+                    <h3>Нужна помощь с установкой?</h3>
+                    <p>Подключайся к стриму — помогу настроить любую программу</p>
+                </div>
+            </div>
+            <div class="stream-links">
+                <a href="https://www.twitch.tv/razetka_programmist" class="button button-twitch">
+                    <span class="button-icon">🎮</span> Twitch стрим
+                </a>
+                <a href="https://www.donationalerts.com/r/znanie_severa" class="button button-donate">
+                    <span class="button-icon">❤️</span> Поддержать проект
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>SoftHub — коллекция проверенных программ для работы и творчества</p>
+    <p class="footer-motto">Все программы распространяются бесплатно или имеют бесплатные версии</p>
+</footer>
+
+<script src="SoftHub.js"></script>
+</body>
+</html>
