@@ -1,7 +1,6 @@
 // ========== БАЗА ДАННЫХ ПРОГРАММ ==========
 const programs = [
     { name: "Telegram", desc: "Быстрый и безопасный мессенджер", category: "internet", icon: "📱", version: "latest", file: "telegram.exe" },
-    { name: "Visual Studio Code", desc: "Редактор исходного кода", category: "dev", icon: "📝", version: "latest", file: "VisualStudioCode.exe" },
     { name: "Python 3.13.13", desc: "Интерпретатор Python и менеджер пакетов pip", category: "dev", icon: "🐍", version: "3.13.13", file: "Python 3.13.13.exe"},
     { name: "Python 3.14.0", desc: "Интерпретатор Python и менеджер пакетов pip", category: "dev", icon: "🐍", version: "3.14.0", file: "Python 3.14.0.exe"},
     { name: "Git", desc: "Система контроля версий для разработчиков", category: "dev", icon: "🔀", version: "2.54.0", file: "Git 2.54.0.exe"},
