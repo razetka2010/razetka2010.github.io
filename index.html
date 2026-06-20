@@ -2,221 +2,510 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="yandex-verification" content="476570856edede56" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="uRNb2-Qzj1amPhuMcfcbXWsyFgDMt_qo-7w0s1x3kDA" />
+    <meta name="description" content="Артём - Разработчик из Нового Уренгоя. Backend, Frontend, Mobile разработка">
     <title>Артём | Разработчик из Нового Уренгоя</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Навигационная панель на весь экран -->
-<header class="fullscreen-nav">
-    <div class="nav-content">
-        <div class="nav-brand">
-            <h1 class="nav-name">Артём</h1>
-            <p class="nav-location">разработчик из Нового Уренгоя</p>
-        </div>
-
-        <nav class="nav-menu">
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">Обо мне</a></li>
-                <li><a href="#projects" class="nav-link">Проекты</a></li>
-                <li><a href="#education" class="nav-link">Образование</a></li>
-                <li><a href="#contacts" class="nav-link">Контакты</a></li>
-                </li><li><a href="profession.html" class="nav-link">Будущее</a></li>
-                </li><li><a href="SoftHub.html" class="nav-link">SoftHub</a></li>
-            </ul>
-        </nav>
-
-        <div class="nav-social">
-            <a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
-            <a href="mailto:raz_etka_2010@mail.ru" class="social-link">Email</a>
-        </div>
-
-        <button class="mobile-menu-btn" aria-label="Меню">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
-
-<!-- Мобильное меню -->
-<div class="mobile-menu">
-    <ul class="mobile-links">
-        <li><a href="#about" class="mobile-link">Обо мне</a></li>
-        <li><a href="#projects" class="mobile-link">Проекты</a></li>
-        <li><a href="#education" class="mobile-link">Образование</a></li>
-        <li><a href="#contacts" class="mobile-link">Контакты</a></li>
-        <li><a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="mobile-link">GitHub</a></li>
-        <li><a href="mailto:raz_etka_2010@mail.ru" class="mobile-link">Email</a></li>
-    </ul>
-</div>
-
-<!-- Основной контент -->
-<main class="main-content">
-    <div class="container">
-        <!-- О себе -->
-        <section class="card personal-card" id="about">
-            <h2><span class="card-icon">👨‍💻</span> Обо мне</h2>
-
-            <div class="bio-block">
-                <p>Меня зовут Артём, я живу в Новом Уренгое и учусь в 9 классе. Моё основное занятие — программирование. Разрабатываю проекты различной сложности, участвую в open source.</p>
-            </div>
-
-            <div class="info-block">
-                <h3>Технический стек</h3>
-                <div class="tags-container">
-                    <span class="tag">Kotlin</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">HTML5</span>
-                    <span class="tag">CSS3</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">C#</span>
-                </div>
-            </div>
-
-            <div class="info-block">
-                <h3>Направления разработки</h3>
-                <ul class="profile-list">
-                    <li>Backend разработка (Java, Kotlin, PHP, Python, C#)</li>
-                    <li>Frontend разработка (JavaScript, HTML, CSS)</li>
-                    <li>Мобильная разработка (Kotlin)</li>
-                    <li>Веб-приложения полного цикла</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Проекты и GitHub -->
-        <section class="card projects-card" id="projects">
-            <h2><span class="card-icon">📁</span> Проекты</h2>
-
-            <div class="github-block">
-                <div class="github-icon">🐙</div>
-                <div class="github-info">
-                    <h3>GitHub профиль</h3>
-                    <p>Все мои проекты с открытым исходным кодом доступны на GitHub</p>
-                    <a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="github-link">
-                        github.com/razetka2010
+    <!-- Top Panel -->
+    <div class="top-panel">
+        <div class="container">
+            <div class="top-panel__content">
+                <!-- Social Links -->
+                <div class="top-panel__social">
+                    <a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:raz_etka_2010@mail.ru" class="social-link" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/znaniesevera" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
                     </a>
                 </div>
             </div>
-
-            <div class="info-block">
-                <h3>Активность</h3>
-                <div class="activity-stats">
-                    <div class="stat-item">
-                        <span class="stat-value">8 +</span>
-                        <span class="stat-label">языков программирования</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-value">2020</span>
-                        <span class="stat-label">начало пути</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Образование -->
-        <section class="card education-card" id="education">
-            <h2><span class="card-icon">📚</span> Образование</h2>
-
-            <div class="education-grid">
-                <div class="education-item">
-                    <div class="education-year">2026 - н.в.</div>
-                    <div class="education-desc">
-                        <strong>9 класс</strong>
-                        <p>Новый Уренгой</p>
-                    </div>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-year">Самообразование</div>
-                    <div class="education-desc">
-                        <strong>Программирование</strong>
-                        <p>Изучение языков, фреймворков, best practices</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Контакты -->
-        <section class="card contacts-card" id="contacts">
-            <h2><span class="card-icon">📬</span> Контакты</h2>
-
-            <div class="contacts-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-info">
-                        <h3>Email</h3>
-                        <a href="mailto:raz_etka_2010@mail.ru" class="contact-link">raz_etka_2010@mail.ru</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-info">
-                        <h3>Telegram</h3>
-                        <span class="contact-text">@znaniesevera</span>
-                        <span class="contact-note">(по вопросам сотрудничества)</span>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-info">
-                        <h3>Телефон</h3>
-                        <a href="tel:+79088647354" class="contact-link">+7 (908) 864-73-54</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">🐙</div>
-                    <div class="contact-info">
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="contact-link">razetka2010</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Twitch стримы -->
-        <section class="stream-section" id="stream">
-            <div class="stream-info">
-                <div class="stream-icon">📺</div>
-                <div>
-                    <h3>Разработка в прямом эфире</h3>
-                    <p>Программирую на Twitch, делюсь опытом</p>
-                </div>
-            </div>
-
-            <div class="stream-links">
-                <a href="https://www.twitch.tv/razetka_programmist" target="_blank" rel="noopener noreferrer" class="button button-twitch">
-                    <span class="button-icon">🔴</span>
-                    Twitch: razetka_programmist
-                </a>
-                <a href="https://www.donationalerts.com/r/znanie_severa" target="_blank" rel="noopener noreferrer" class="button button-donate">
-                    <span class="button-icon">💸</span>
-                    DonationAlerts
-                </a>
-            </div>
-        </section>
+        </div>
     </div>
-</main>
 
-<!-- Футер -->
-<footer class="footer">
-    <div class="footer-content">
-        <p>© 2025 Артём. Разработчик из Нового Уренгоя.</p>
-        <p class="footer-motto">Код • Творчество • Развитие</p>
-    </div>
-</footer>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg width="55" height="55" viewBox="0 0 55 55" fill="currentColor">
+                        <path d="M27.5 0C12.33 0 0 12.33 0 27.5S12.33 55 27.5 55 55 42.67 55 27.5 42.67 0 27.5 0zm0 50C14.08 50 5 40.92 5 27.5S14.08 5 27.5 5 50 14.08 50 27.5 40.92 50 27.5 50z"/>
+                        <path d="M27.5 15c-6.63 0-12 5.37-12 12s5.37 12 12 12 12-5.37 12-12-5.37-12-12-12zm0 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Артём</span>
+                    <span class="logo-subtitle">Разработчик из Нового Уренгоя</span>
+                </div>
+            </a>
+        </div>
+    </header>
 
-<script src="js/main.js"></script>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Навыки</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Проекты</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Образование</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profession.html" class="nav-link">Профессия</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section" id="about">
+                <div class="hero-content">
+                    <div class="hero-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="hero-title">Привет, я Артём</h1>
+                    <p class="hero-subtitle">Разработчик из Нового Уренгоя. Создаю проекты различной сложности, учусь и развиваюсь в мире технологий.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">15 лет</div>
+                                <div class="stat-label">Возраст</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">4+ года</div>
+                                <div class="stat-label">в программировании</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">Новый Уренгой</div>
+                                <div class="stat-label">Мой город</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">Программист</div>
+                                <div class="stat-label">Моё призвание</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote Section -->
+            <section class="quote-section">
+                <div class="quote-card">
+                    <div class="quote-icon">💬</div>
+                    <blockquote class="quote-text">
+                        Продуктивность залог успеха!
+                    </blockquote>
+                    <cite class="quote-author">— Артём</cite>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section" id="skills">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </span>
+                    Языки и технологии
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-logo kotlin">K</div>
+                        <span class="skill-name">Kotlin</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo java">J</div>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo javascript">JS</div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo html">H</div>
+                        <span class="skill-name">HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo css">C</div>
+                        <span class="skill-name">CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo php">P</div>
+                        <span class="skill-name">PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo python">Py</div>
+                        <span class="skill-name">Python</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What I Do Section -->
+            <section class="activities-section">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                        </svg>
+                    </span>
+                    Чем занимаюсь
+                </h2>
+                <div class="activities-content">
+                    <div class="activities-text">
+                        <p>Разрабатываю сайты, веб-приложения, Telegram-ботов и различные автоматизированные системы.</p>
+                        <p>Люблю разбираться в устройстве компьютеров и сетей, поэтому часто помогаю учителям и знакомым решать технические проблемы.</p>
+                    </div>
+                    <div class="activities-icons">
+                        <div class="activity-icon">
+                            <div class="icon-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H9v-2h6v2zm-3-7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+                                </svg>
+                            </div>
+                            <span>Разработка сайтов</span>
+                        </div>
+                        <div class="activity-icon">
+                            <div class="icon-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h14v3H5z"/>
+                                </svg>
+                            </div>
+                            <span>Веб-приложения</span>
+                        </div>
+                        <div class="activity-icon">
+                            <div class="icon-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                                </svg>
+                            </div>
+                            <span>Telegram-боты</span>
+                        </div>
+                        <div class="activity-icon">
+                            <div class="icon-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <span>Автоматизация систем</span>
+                        </div>
+                        <div class="activity-icon">
+                            <div class="icon-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/>
+                                </svg>
+                            </div>
+                            <span>Поддержка и помощь</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </span>
+                    О себе
+                </h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <ul class="about-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                <span>Ценю практичность, честность и здравый смысл</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                <span>Люблю, когда всё работает, как должно</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                <span>Стараюсь постоянно развиваться</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                <span>Не люблю пустые разговоры и навязчивость</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                <span>Слушаю всё, что считаю нужным</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                <span>Делаю своё дело и не останавливаюсь</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Goals Section -->
+            <section class="goals-section">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </span>
+                    Цель
+                </h2>
+                <div class="goals-content">
+                    <div class="goals-text">
+                        <p>Хочу стать системным администратором и профессионально заниматься сопровождением серверов, сетей и информационных систем.</p>
+                    </div>
+                    <div class="goals-image">
+                        <div class="image-placeholder large">
+                            <svg width="200" height="150" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Music Section -->
+            <section class="music-section">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                        </svg>
+                    </span>
+                    Музыка
+                </h2>
+                <div class="music-content">
+                    <p class="music-intro">Хорошая музыка — она либо про жизнь, либо про душу. А в этом списке есть и то, и другое.</p>
+                    <div class="artists-grid">
+                        <div class="artist-item">Сектор Газа</div>
+                        <div class="artist-item">Михаил Круг</div>
+                        <div class="artist-item">Ария</div>
+                        <div class="artist-item">Бутырка</div>
+                        <div class="artist-item">БИ-2</div>
+                        <div class="artist-item">Кино</div>
+                        <div class="artist-item">Нэнси</div>
+                        <div class="artist-item">Лолита</div>
+                        <div class="artist-item">Стас Михайлов</div>
+                        <div class="artist-item">Татьяна Буланова</div>
+                        <div class="artist-item">Король и Шут</div>
+                        <div class="artist-item">Высоцкий</div>
+                        <div class="artist-item">Киркоров</div>
+                        <div class="artist-item">Меладзе</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section" id="projects">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/>
+                        </svg>
+                    </span>
+                    Мои проекты
+                </h2>
+                <div class="projects-grid">
+                    <a href="https://razetka2010.github.io/" target="_blank" rel="noopener noreferrer" class="project-card">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </div>
+                        <h3>Мой сайт</h3>
+                        <p>https://razetka2010.github.io/</p>
+                    </a>
+                    <a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="project-card">
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3>GitHub профиль</h3>
+                        <p>https://github.com/razetka2010</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contacts Section -->
+            <section class="contacts-section" id="contacts">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </span>
+                    Контакты
+                </h2>
+                <div class="contacts-grid">
+                    <a href="mailto:raz_etka_2010@mail.ru" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>raz_etka_2010@mail.ru</p>
+                        </div>
+                    </a>
+                    <a href="tel:+79088647354" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Телефон</h3>
+                            <p>+7 (908) 864-73-54</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/znaniesevera" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Telegram</h3>
+                            <p>@znaniesevera</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <span class="footer-label">Локация:</span>
+                        <span class="footer-value">г. Новый Уренгой, ЯНАО</span>
+                    </div>
+                    <div class="footer-item">
+                        <span class="footer-label">Специализация:</span>
+                        <span class="footer-value">Backend, Frontend, Mobile разработка</span>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <span class="footer-label">Социальные сети:</span>
+                    <div class="social-links">
+                        <a href="https://github.com/razetka2010" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/znaniesevera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 Артём. Разработчик из Нового Уренгоя.</p>
+                    <div class="footer-links">
+                        <a href="https://twitch.tv/razetka_programmist" target="_blank" rel="noopener noreferrer">Twitch</a>
+                        <a href="https://donationalerts.com/r/znanie_severa" target="_blank" rel="noopener noreferrer">DonationAlerts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
